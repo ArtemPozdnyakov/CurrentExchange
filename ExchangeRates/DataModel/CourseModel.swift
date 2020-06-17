@@ -13,7 +13,7 @@ struct CourseModel {
     let fullName: [String: String]
     
     
-    init?(courseDataModel: CourseDataModel) {
+    init(courseDataModel: CourseDataModel) {
         let c = courseDataModel.valute
         var dom: [String: Double] = [:]
         
@@ -28,6 +28,11 @@ struct CourseModel {
             dom2[j.value.charCode] = j.value.fullName
         }
         fullName = dom2
+    }
+    
+    init() {
+        self.valute = [:]
+        self.fullName = [:]
     }
 }
 

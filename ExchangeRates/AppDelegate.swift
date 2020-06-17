@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        YMKMapKit.setApiKey("782c0402-e3ae-42b6-8d11-2aa154036626")
+        YMKMapKit.setApiKey("2b97be9a-a443-424d-9b4a-904c7b916d56")
         return true
     }
 

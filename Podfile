@@ -9,6 +9,7 @@ target 'ExchangeRates' do
 #pod ‘YandexMapKit’, ’3.5’ 
 #pod ‘YandexMapKitSearch’, ’3.5’ 
 #pod 'lottie-ios'
+#pod 'PinLayout'
   # Pods for ExchangeRates
 
 end

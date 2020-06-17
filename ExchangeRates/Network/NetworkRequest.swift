@@ -7,22 +7,21 @@
 //
 
 import Alamofire
-protocol NetworkWetherDelegate {
-    func updateInterface(_: NetworkRequest, with currentWeather: CourseModel)
+
+protocol NetworkDelegate: class {
+    func updateInterface(with current: CourseModel)
 }
 
-
-class NetworkRequest {
+final class NetworkRequest {
     let url = URL(string: "https://www.cbr-xml-daily.ru/daily_json.js")
-    var delegate: NetworkWetherDelegate?
+    weak var delegate: NetworkDelegate?
     
     func getCourse() {
         DispatchQueue.global().async {
             AF.request(self.url!).response { response in
                 if let data = response.data {
-                    if let currentWeather = self.parseJSON(withData: data) {
-                        self.delegate?.updateInterface(self, with: currentWeather )
-                        print(currentWeather)
+                    if let current = self.parseJSON(withData: data) {
+                        self.delegate?.updateInterface(with: current)
                     }
                 }
             }
@@ -33,9 +32,9 @@ class NetworkRequest {
     fileprivate func parseJSON(withData data: Data) -> CourseModel? {
         let decoder = JSONDecoder()
         do {
-            let currentWhetherData = try decoder.decode(CourseDataModel.self, from: data)
-            guard let currentWeather = CourseModel(courseDataModel: currentWhetherData) else { return nil}
-            return currentWeather
+            let currentData = try decoder.decode(CourseDataModel.self, from: data)
+            let current = CourseModel(courseDataModel: currentData)
+            return current
         } catch let error as NSError {
             print(error.localizedDescription)
         }

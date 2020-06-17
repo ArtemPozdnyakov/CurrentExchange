@@ -9,11 +9,9 @@
 import Foundation
 
 struct CourseDataModel: Codable {
-    let date: String
     let valute: [String: Valutes]
 
     enum CodingKeys: String, CodingKey {
-        case date = "Date"
         case valute = "Valute"
     }
 }

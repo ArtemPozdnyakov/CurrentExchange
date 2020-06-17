@@ -10,7 +10,6 @@
 		84A3EF1624881CBC00F3BC7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3EF1524881CBC00F3BC7C /* AppDelegate.swift */; };
 		84A3EF1824881CBC00F3BC7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3EF1724881CBC00F3BC7C /* SceneDelegate.swift */; };
 		84A3EF1A24881CBC00F3BC7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3EF1924881CBC00F3BC7C /* ViewController.swift */; };
-		84A3EF1D24881CBC00F3BC7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A3EF1B24881CBC00F3BC7C /* Main.storyboard */; };
 		84A3EF1F24881CC000F3BC7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A3EF1E24881CC000F3BC7C /* Assets.xcassets */; };
 		84A3EF2224881CC000F3BC7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A3EF2024881CC000F3BC7C /* LaunchScreen.storyboard */; };
 		84A3EF2B2489579000F3BC7C /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3EF2A2489579000F3BC7C /* NetworkRequest.swift */; };
@@ -21,15 +20,28 @@
 		84A3EF37248E965400F3BC7C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3EF36248E965400F3BC7C /* UIColor+Extension.swift */; };
 		84A3EF39248EA96100F3BC7C /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 84A3EF38248EA96000F3BC7C /* loading.json */; };
 		84A3EF44248FE5D500F3BC7C /* convertManey.json in Resources */ = {isa = PBXBuildFile; fileRef = 84A3EF43248FE5D500F3BC7C /* convertManey.json */; };
+		84A3EF482493A07600F3BC7C /* UIViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3EF472493A07600F3BC7C /* UIViewExt.swift */; };
+		84A3EF4A2493A2EF00F3BC7C /* ExchangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3EF492493A2EF00F3BC7C /* ExchangeView.swift */; };
+		84A3EF4C2493B33800F3BC7C /* ExchangeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3EF4B2493B33800F3BC7C /* ExchangeVM.swift */; };
+		84A3EF58249A68B100F3BC7C /* ExchangeRatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A3EF57249A68B100F3BC7C /* ExchangeRatesTests.swift */; };
 		B49AE405BAFA1929526563D2 /* Pods_ExchangeRates.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C59356521333809C4A873512 /* Pods_ExchangeRates.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84A3EF5A249A68B100F3BC7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84A3EF0A24881CBC00F3BC7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84A3EF1124881CBC00F3BC7C;
+			remoteInfo = ExchangeRates;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		84A3EF1224881CBC00F3BC7C /* ExchangeRates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeRates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A3EF1524881CBC00F3BC7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A3EF1724881CBC00F3BC7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		84A3EF1924881CBC00F3BC7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84A3EF1C24881CBC00F3BC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84A3EF1E24881CC000F3BC7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A3EF2124881CC000F3BC7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84A3EF2324881CC000F3BC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +53,12 @@
 		84A3EF36248E965400F3BC7C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		84A3EF38248EA96000F3BC7C /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
 		84A3EF43248FE5D500F3BC7C /* convertManey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = convertManey.json; sourceTree = "<group>"; };
+		84A3EF472493A07600F3BC7C /* UIViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExt.swift; sourceTree = "<group>"; };
+		84A3EF492493A2EF00F3BC7C /* ExchangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeView.swift; sourceTree = "<group>"; };
+		84A3EF4B2493B33800F3BC7C /* ExchangeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeVM.swift; sourceTree = "<group>"; };
+		84A3EF55249A68B100F3BC7C /* ExchangeRatesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExchangeRatesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84A3EF57249A68B100F3BC7C /* ExchangeRatesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatesTests.swift; sourceTree = "<group>"; };
+		84A3EF59249A68B100F3BC7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C59356521333809C4A873512 /* Pods_ExchangeRates.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExchangeRates.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDB87B98D885BD19821A7F71 /* Pods-ExchangeRates.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRates.release.xcconfig"; path = "Target Support Files/Pods-ExchangeRates/Pods-ExchangeRates.release.xcconfig"; sourceTree = "<group>"; };
 		EF017E3CBBA93180A31C581B /* Pods-ExchangeRates.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExchangeRates.debug.xcconfig"; path = "Target Support Files/Pods-ExchangeRates/Pods-ExchangeRates.debug.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +71,13 @@
 			files = (
 				84A3EF32248AC3B700F3BC7C /* MapKit.framework in Frameworks */,
 				B49AE405BAFA1929526563D2 /* Pods_ExchangeRates.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A3EF52249A68B100F3BC7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				84A3EF1424881CBC00F3BC7C /* ExchangeRates */,
+				84A3EF56249A68B100F3BC7C /* ExchangeRatesTests */,
 				84A3EF1324881CBC00F3BC7C /* Products */,
 				5AC81BDB73063D522AB9E82F /* Pods */,
 				4D9CE4BA4D885BF7F8C8D2B3 /* Frameworks */,
@@ -91,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				84A3EF1224881CBC00F3BC7C /* ExchangeRates.app */,
+				84A3EF55249A68B100F3BC7C /* ExchangeRatesTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,13 +127,14 @@
 			children = (
 				84A3EF3A248EA96600F3BC7C /* Animation */,
 				84A3EF35248E963900F3BC7C /* Extension */,
-				84A3EF2C248961E000F3BC7C /* Model */,
 				84A3EF292489575400F3BC7C /* Network */,
+				84A3EF2C248961E000F3BC7C /* DataModel */,
 				84A3EF1524881CBC00F3BC7C /* AppDelegate.swift */,
 				84A3EF1724881CBC00F3BC7C /* SceneDelegate.swift */,
+				84A3EF50249A55A100F3BC7C /* ViewModel */,
+				84A3EF4F249A556B00F3BC7C /* View */,
 				84A3EF42248FE3FC00F3BC7C /* Controller */,
 				84A3EF33248AC8C600F3BC7C /* SearchMap.swift */,
-				84A3EF1B24881CBC00F3BC7C /* Main.storyboard */,
 				84A3EF1E24881CC000F3BC7C /* Assets.xcassets */,
 				84A3EF2024881CC000F3BC7C /* LaunchScreen.storyboard */,
 				84A3EF2324881CC000F3BC7C /* Info.plist */,
@@ -122,19 +150,20 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		84A3EF2C248961E000F3BC7C /* Model */ = {
+		84A3EF2C248961E000F3BC7C /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
 				84A3EF2D248961F500F3BC7C /* CourseModel.swift */,
 				84A3EF2F248962BC00F3BC7C /* CourseDataModel.swift */,
 			);
-			path = Model;
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 		84A3EF35248E963900F3BC7C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				84A3EF36248E965400F3BC7C /* UIColor+Extension.swift */,
+				84A3EF472493A07600F3BC7C /* UIViewExt.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -154,6 +183,31 @@
 				84A3EF1924881CBC00F3BC7C /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		84A3EF4F249A556B00F3BC7C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84A3EF492493A2EF00F3BC7C /* ExchangeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84A3EF50249A55A100F3BC7C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				84A3EF4B2493B33800F3BC7C /* ExchangeVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		84A3EF56249A68B100F3BC7C /* ExchangeRatesTests */ = {
+			isa = PBXGroup;
+			children = (
+				84A3EF57249A68B100F3BC7C /* ExchangeRatesTests.swift */,
+				84A3EF59249A68B100F3BC7C /* Info.plist */,
+			);
+			path = ExchangeRatesTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +231,24 @@
 			productReference = 84A3EF1224881CBC00F3BC7C /* ExchangeRates.app */;
 			productType = "com.apple.product-type.application";
 		};
+		84A3EF54249A68B100F3BC7C /* ExchangeRatesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84A3EF5C249A68B100F3BC7C /* Build configuration list for PBXNativeTarget "ExchangeRatesTests" */;
+			buildPhases = (
+				84A3EF51249A68B100F3BC7C /* Sources */,
+				84A3EF52249A68B100F3BC7C /* Frameworks */,
+				84A3EF53249A68B100F3BC7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84A3EF5B249A68B100F3BC7C /* PBXTargetDependency */,
+			);
+			name = ExchangeRatesTests;
+			productName = ExchangeRatesTests;
+			productReference = 84A3EF55249A68B100F3BC7C /* ExchangeRatesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,6 +261,10 @@
 				TargetAttributes = {
 					84A3EF1124881CBC00F3BC7C = {
 						CreatedOnToolsVersion = 11.5;
+					};
+					84A3EF54249A68B100F3BC7C = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 84A3EF1124881CBC00F3BC7C;
 					};
 				};
 			};
@@ -206,6 +282,7 @@
 			projectRoot = "";
 			targets = (
 				84A3EF1124881CBC00F3BC7C /* ExchangeRates */,
+				84A3EF54249A68B100F3BC7C /* ExchangeRatesTests */,
 			);
 		};
 /* End PBXProject section */
@@ -218,8 +295,14 @@
 				84A3EF39248EA96100F3BC7C /* loading.json in Resources */,
 				84A3EF2224881CC000F3BC7C /* LaunchScreen.storyboard in Resources */,
 				84A3EF1F24881CC000F3BC7C /* Assets.xcassets in Resources */,
-				84A3EF1D24881CBC00F3BC7C /* Main.storyboard in Resources */,
 				84A3EF44248FE5D500F3BC7C /* convertManey.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84A3EF53249A68B100F3BC7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,8 +338,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A3EF482493A07600F3BC7C /* UIViewExt.swift in Sources */,
+				84A3EF4C2493B33800F3BC7C /* ExchangeVM.swift in Sources */,
 				84A3EF1A24881CBC00F3BC7C /* ViewController.swift in Sources */,
 				84A3EF2E248961F500F3BC7C /* CourseModel.swift in Sources */,
+				84A3EF4A2493A2EF00F3BC7C /* ExchangeView.swift in Sources */,
 				84A3EF30248962BC00F3BC7C /* CourseDataModel.swift in Sources */,
 				84A3EF1624881CBC00F3BC7C /* AppDelegate.swift in Sources */,
 				84A3EF2B2489579000F3BC7C /* NetworkRequest.swift in Sources */,
@@ -266,17 +352,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84A3EF51249A68B100F3BC7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84A3EF58249A68B100F3BC7C /* ExchangeRatesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		84A3EF1B24881CBC00F3BC7C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84A3EF1C24881CBC00F3BC7C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		84A3EF5B249A68B100F3BC7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84A3EF1124881CBC00F3BC7C /* ExchangeRates */;
+			targetProxy = 84A3EF5A249A68B100F3BC7C /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		84A3EF2024881CC000F3BC7C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -440,6 +534,46 @@
 			};
 			name = Release;
 		};
+		84A3EF5D249A68B100F3BC7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CMXWZDT97;
+				INFOPLIST_FILE = ExchangeRatesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Exchange-Rates.ExchangeRatesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExchangeRates.app/ExchangeRates";
+			};
+			name = Debug;
+		};
+		84A3EF5E249A68B100F3BC7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8CMXWZDT97;
+				INFOPLIST_FILE = ExchangeRatesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Exchange-Rates.ExchangeRatesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExchangeRates.app/ExchangeRates";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -457,6 +591,15 @@
 			buildConfigurations = (
 				84A3EF2724881CC000F3BC7C /* Debug */,
 				84A3EF2824881CC000F3BC7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84A3EF5C249A68B100F3BC7C /* Build configuration list for PBXNativeTarget "ExchangeRatesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84A3EF5D249A68B100F3BC7C /* Debug */,
+				84A3EF5E249A68B100F3BC7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

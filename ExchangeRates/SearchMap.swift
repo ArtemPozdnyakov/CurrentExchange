@@ -12,14 +12,14 @@ import YandexMapKitSearch
 import CoreLocation
 
 
-
 /**
  * This example shows how to add and interact with a layer that displays search results on the map.
  * Note: search API calls count towards MapKit daily usage limits. Learn more at
  * https://tech.yandex.ru/mapkit/doc/3.x/concepts/conditions-docpage/#conditions__limits
  */
 class SearchViewController: UIViewController, YMKMapCameraListener {
-    @IBOutlet weak var mapView: YMKMapView!
+    
+    var mapView: YMKMapView = YMKMapView()
     var searchManager: YMKSearchManager?
     var searchSession: YMKSearchSession?
     
@@ -36,10 +36,13 @@ class SearchViewController: UIViewController, YMKMapCameraListener {
         return lm
     }()
    
-    
+    override func loadView() {
+        view = mapView
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         if CLLocationManager.locationServicesEnabled() {
             locationManager.requestLocation()
         }
@@ -54,8 +57,8 @@ class SearchViewController: UIViewController, YMKMapCameraListener {
         
         searchManager = YMKSearch.sharedInstance().createSearchManager(with: .combined)
         
-        mapView.mapWindow.map.addCameraListener(with: self)
-        
+       let com = mapView.mapWindow.map//.mapWindow.map.addCameraListener(with: self)
+        com.addCameraListener(with: self)
         mapView.mapWindow.map.move(with: YMKCameraPosition(target: YMKPoint(latitude: latitude, longitude: longtude),
             zoom: 14,
             azimuth: 0,
